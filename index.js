@@ -1,4 +1,8 @@
 var cart = [];
+var itemName
+var itemPrice
+var itemList
+var item
 
 function getCart() {
  return cart;
