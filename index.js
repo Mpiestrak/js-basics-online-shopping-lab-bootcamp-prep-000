@@ -47,11 +47,14 @@ function viewCart(){
 }
 
 function total() {
- var myTotal = 0
-for(var i = 0, len = cart.length; i<len; i++) {
-  myTotal+= cart[i][1];
-}
-return myTotal;
+  let currentTotal = 0;
+  
+  for (let i = 0; i < cart.length; i++) {
+    let currItem = cart[i];
+    
+    currentTotal += currItem[itemPrice];
+  }
+  return currentTotal;
 }
 
 function removeFromCart(item) {
