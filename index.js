@@ -55,7 +55,17 @@ return total;
 }
 
 function removeFromCart(item) {
-  
+  var isItemThereFlag = false; // i created a flag to determine if the item is in the cart
+  for(var i = 0; i < cart.length; i++){ // this iterates through the object array
+    if(item === cart[i].itemName){ //this essentially checks if the item is in the cart
+      cart.splice(i, 1) ;
+      isItemThereFlag = true ;
+    }
+  }
+  if(isItemThereFlag === false){
+    return 'That item is not in your cart.';
+  }else
+  return cart;
 }
 
 function placeOrder(cardNumber) {
