@@ -75,6 +75,5 @@ function placeOrder(cardNumber) {
   }else{
     return `Your total cost is $${newTotal}, which will be charged to the card ${cardNumber}.`
     cart.length = 0
-    return 
   }
 }
