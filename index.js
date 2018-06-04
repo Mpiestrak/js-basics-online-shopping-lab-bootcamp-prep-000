@@ -50,7 +50,7 @@ function total() {
   let currentTotal = 0;
   for (let i = 0; i < cart.length; i++) {
     let item = cart[i];
-    currentTotal += item[itemPrice];
+    currentTotal += cart[itemPrice];
   }
   return currentTotal;
 }
