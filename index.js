@@ -47,12 +47,11 @@ function viewCart(){
 }
 
 function total() {
-  let currentTotal = 0;
-  for (let i = 0; i < cart.length; i++) {
-    let item = cart[i];
-    currentTotal += cart[itemPrice];
-  }
-  return currentTotal;
+var total = 0;
+for( var i = 0; i<cart.length; i++){
+  total += cart[i].itemPrice;
+}
+return total;
 }
 
 function removeFromCart(item) {
